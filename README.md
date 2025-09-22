@@ -42,7 +42,6 @@ tugas-kriptografi/
 ├── index.php              # Halaman form pencarian
 ├── search.php             # Halaman hasil pencarian
 ├── setup.php              # Setup database dan tabel
-├── generate_new_key.php   # Utility generate AES key
 └── README.md              # Dokumentasi proyek
 ```
 
@@ -67,14 +66,6 @@ define('DB_HOST', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', 'your_password');
 define('DB_NAME', 'kriptografi');
-```
-
-### 4. Generate AES Key (Opsional)
-```bash
-# Generate key baru
-php generate_new_key.php
-
-# Copy output key ke config.php
 ```
 
 ### 5. Import Data Mahasiswa
@@ -157,20 +148,6 @@ $decrypted = openssl_decrypt($encrypted, 'AES-128-CBC', $key, OPENSSL_RAW_DATA, 
 - **IV**: Random 16 bytes (berbeda setiap enkripsi)
 - **Ciphertext**: Base64 encoded string
 - **URL**: `search.php?q=<encrypted_base64_string>`
-
-## 🛡️ Keamanan
-
-### Fitur Keamanan:
-- ✅ Random IV untuk setiap enkripsi
-- ✅ Strong 128-bit encryption key
-- ✅ URL encoding untuk parameter
-- ✅ Input validation dan sanitization
-- ✅ Error handling untuk decrypt failures
-
-### Catatan Keamanan:
-- Key disimpan dalam kode (untuk tugas akademik)
-- Tidak menggunakan HTTPS (development only)
-- IV tidak disembunyikan (standar AES-CBC)
 
 ## 🧪 Testing
 
