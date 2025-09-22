@@ -1,0 +1,125 @@
+# .gitignore untuk Proyek Kriptografi PHP
+
+# === PHP ===
+# Composer dependencies
+/vendor/
+composer.lock
+composer.phar
+
+# PHP logs and cache
+*.log
+*.cache
+/logs/
+/cache/
+
+# === Database ===
+# Database files (jika menggunakan SQLite)
+*.db
+*.sqlite
+*.sqlite3
+
+# Database dumps
+*.sql
+/backup/
+/dumps/
+
+# === IDE & Editor ===
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# PhpStorm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+
+# Vim
+*.swp
+*.swo
+*~
+
+# === Security & Keys ===
+# Key files (jika ada file terpisah)
+/keys/
+*.key
+*.pem
+secret.txt
+
+# Environment files
+.env
+.env.local
+.env.production
+.env.staging
+
+# === Temporary Files ===
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+/temp/
+/tmp/
+
+# === Web Server ===
+# Apache
+.htaccess.bak
+.htpasswd
+
+# Error logs
+error_log
+error.log
+access.log
+
+# === Screenshots (optional - uncomment if don't want to commit) ===
+# /screenshots/
+# *.png
+# *.jpg
+# *.jpeg
+# *.gif
+
+# === Node.js (jika ada frontend tools) ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# === Generated Files ===
+# Generated key file
+generate_new_key.php
+
+# Documentation generated files
+/docs/build/
+
+# === Project Specific ===
+# Config backup
+config.php.bak
+config.backup.php
+
+# Upload directories (jika ada fitur upload)
+/uploads/
+/files/
+
+# Session files
+/sessions/
+
+# === Testing ===
+/tests/coverage/
+phpunit.xml
+.phpunit.result.cache
