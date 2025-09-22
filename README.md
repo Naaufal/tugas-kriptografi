@@ -11,11 +11,11 @@ Tugas Mata Kuliah Kriptografi - Implementasi Enkripsi AES pada Sistem Pencarian 
 
 ## 👥 Anggota Kelompok
 
-| No | Nama | NIM | Jurusan | Email |
-|----|------|-----|---------|-------|
-| 1 | Adam Aliyazid | 312310180 | Teknik Informatika | adamaliyazid@email.com |
-| 2 | Muhammad Alghofiqi | 312310207 | Teknik Informatika | alghofiqi@email.com |
-| 3 | Muhammad Naufal Ali Akbar | 312310687 | Teknik Informatika | muhammadnaufalaliakbar@email.com |
+| No | Nama | NIM |
+|----|------|-----|
+| 1 | Adam Aliyazid | 312310180 |
+| 2 | Muhammad Alghofiqi | 312310207 |
+| 3 | Muhammad Naufal Ali Akbar | 312310687 |
 
 ## 🎯 Tujuan Tugas
 
@@ -95,14 +95,17 @@ php -S localhost:3000
 ## 📖 Cara Penggunaan
 
 ### 1. Halaman Pencarian (`index.php`)
-![Halaman Pencarian](screenshots/search-form.png)
+<img width="1772" height="1014" alt="image" src="https://github.com/user-attachments/assets/36452dd4-a04d-4607-a977-cdb3f2778e39" />
+
+
 
 - User memasukkan kata kunci pencarian (nama atau jurusan)
 - Query akan dienkripsi menggunakan AES-128-CBC
 - User diarahkan ke halaman hasil dengan parameter terenkripsi
 
 ### 2. Halaman Hasil (`search.php`)
-![Halaman Hasil](screenshots/search-results.png)
+<img width="1772" height="1014" alt="image" src="https://github.com/user-attachments/assets/7926c855-60fd-47db-ac74-9ff92a2981c2" />
+
 
 - Parameter URL berisi query terenkripsi
 - Query didekripsi menggunakan key yang sama
@@ -195,15 +198,5 @@ Proyek ini berhasil mengimplementasikan:
 
 Implementasi ini mendemonstrasikan konsep dasar kriptografi simetris dan penggunaannya dalam aplikasi web untuk mengamankan data yang dikirim melalui URL.
 
-## 📚 Referensi
 
-- [AES Encryption Standard (FIPS 197)](https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.197.pdf)
-- [PHP OpenSSL Documentation](https://www.php.net/manual/en/book.openssl.php)
-- [Cipher Block Chaining (CBC) Mode](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#CBC)
-
-## 📞 Kontak
-
-Untuk pertanyaan atau diskusi lebih lanjut, silakan hubungi anggota kelompok melalui email yang tercantum di atas.
-
----
 *Tugas Kriptografi - Universitas Pelita Bangsa*
